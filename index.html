@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10120f">
+  <meta name="description" content="مساحة رقمية بسيطة لفكرة تستحق أن تُرى.">
+  <title>مساحة — فكرة تستحق أن تُرى</title>
+  <style>
+    :root{color-scheme:dark;--bg:#10120f;--panel:#171a16;--muted:#a3a99d;--text:#f1f2eb;--lime:#d7f36a;--line:#30352d}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}.nav{height:82px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{display:flex;align-items:center;gap:11px;font-size:20px;font-weight:750;letter-spacing:-.04em}.mark{width:34px;height:34px;border-radius:12px;background:var(--lime);color:#171a12;display:grid;place-items:center;font-weight:900}.links{display:flex;align-items:center;gap:30px;color:#c4c9be;font-size:14px}.links a:hover{color:var(--lime)}.nav-cta{border:1px solid #596044;border-radius:999px;padding:9px 17px;color:var(--lime)!important}
+    .hero{min-height:640px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:36px;padding:76px 0 90px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--lime);font-size:13px;letter-spacing:.04em}.dot{width:7px;height:7px;background:var(--lime);border-radius:50%;box-shadow:0 0 14px var(--lime)}h1{font-size:clamp(46px,7vw,82px);line-height:1.13;letter-spacing:-.065em;margin:22px 0}.hero h1 span{color:var(--lime)}.lead{max-width:540px;color:var(--muted);font-size:18px;margin:0 0 32px}.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border-radius:999px;padding:13px 21px;font-size:14px;font-weight:700;transition:transform .2s}.btn:hover{transform:translateY(-2px)}.primary{background:var(--lime);color:#151810}.secondary{border:1px solid #42483e;color:#e4e7df}.arrow{font-size:18px;line-height:1}
+    .visual{position:relative;min-height:420px;display:grid;place-items:center}.halo{position:absolute;width:340px;height:340px;border-radius:50%;background:radial-gradient(circle,rgba(215,243,106,.18),rgba(215,243,106,.03) 55%,transparent 72%);filter:blur(4px)}.orb{position:relative;width:min(310px,75vw);aspect-ratio:1;border:1px solid #505941;border-radius:50%;background:radial-gradient(circle at 34% 28%,#333b26 0,#20261a 26%,#151812 66%);box-shadow:inset -25px -25px 60px #090a08,0 35px 90px #0008;overflow:hidden}.orb:before,.orb:after{content:"";position:absolute;border:1px solid #d7f36a55;border-radius:50%;inset:18%;transform:rotate(-28deg) scaleX(1.45)}.orb:after{inset:6%;transform:rotate(47deg) scaleX(.64);border-color:#d7f36a33}.orb-core{position:absolute;inset:35%;border-radius:50%;background:var(--lime);filter:blur(34px);opacity:.8}.float-card{position:absolute;bottom:42px;left:5px;padding:15px 19px;border:1px solid #42483e;background:#171a16dd;backdrop-filter:blur(12px);border-radius:16px;font-size:13px;color:#cdd2c6}.float-card b{display:block;color:var(--text);font-size:15px;margin-bottom:2px}
+    .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;color:#9aa092;font-size:13px}.strip .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.strip strong{color:#e5e9dc;font-weight:600}.section{padding:100px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:34px}.kicker{font-size:13px;color:var(--lime);margin-bottom:10px}.section h2{font-size:clamp(30px,4vw,48px);line-height:1.2;letter-spacing:-.05em;margin:0}.section-intro{max-width:390px;color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:25px;min-height:210px}.icon{width:40px;height:40px;display:grid;place-items:center;border:1px solid #48513a;border-radius:13px;color:var(--lime);font-size:19px;margin-bottom:22px}.card h3{font-size:17px;margin:0 0 8px}.card p{font-size:14px;color:var(--muted);margin:0}.contact{padding:0 0 92px}.contact-box{background:linear-gradient(115deg,#20261a,#161914 68%);border:1px solid #454c38;border-radius:28px;padding:42px;display:flex;align-items:center;justify-content:space-between;gap:24px}.contact-box p{margin:10px 0 0;color:var(--muted)}footer{border-top:1px solid var(--line);padding:24px 0;color:#858c7f;font-size:12px}.foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:760px){.links a:not(.nav-cta){display:none}.nav{height:70px}.hero{grid-template-columns:1fr;padding:70px 0 56px;gap:0}.hero-copy{order:1}.visual{order:0;min-height:310px}.orb{width:230px}.float-card{bottom:15px;left:0}.section{padding:72px 0}.section-head{display:block}.section-intro{margin-top:15px}.cards{grid-template-columns:1fr}.card{min-height:auto}.contact-box{display:block;padding:30px}.contact-box .btn{margin-top:24px}}
+  </style>
+</head>
+<body>
+  <header class="wrap nav">
+    <a class="brand" href="#top" aria-label="مساحة، الصفحة الرئيسية"><span class="mark">م</span><span>مساحة</span></a>
+    <nav class="links" aria-label="التنقل"><a href="#about">عن الفكرة</a><a href="#features">ما نقدمه</a><a class="nav-cta" href="#contact">تواصل معنا</a></nav>
+  </header>
+  <main id="top">
+    <section class="wrap hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="dot"></span> بداية بسيطة، أثر واضح</div>
+        <h1>كل فكرة كبيرة<br>تبدأ بـ <span>مساحة.</span></h1>
+        <p class="lead">مكانك على الإنترنت يبدأ هنا. صفحة واضحة، تجربة مريحة، ومساحة تكبر مع فكرتك خطوة بخطوة.</p>
+        <div class="actions"><a class="btn primary" href="#contact">خلّنا نبدأ <span class="arrow">←</span></a><a class="btn secondary" href="#about">اكتشف الفكرة</a></div>
+      </div>
+      <div class="visual" aria-hidden="true"><div class="halo"></div><div class="orb"><div class="orb-core"></div></div><div class="float-card"><b>فكرتك، بمكانها</b>واجهة بسيطة تنمو معك</div></div>
+    </section>
+    <div class="strip"><div class="wrap"><span>مصممة لتكون <strong>واضحة</strong></span><span>خفيفة على الجوال <strong>ومتاحة دائمًا</strong></span><span>جاهزة لـ <strong>خطوتك القادمة</strong></span></div></div>
+    <section class="wrap section" id="about">
+      <div class="section-head"><div><div class="kicker">عن مساحة</div><h2>حضور رقمي يشبهك.</h2></div><p class="section-intro">سواء عندك مشروع، خدمة، أو فكرة جديدة، البداية الجيدة توصل رسالتك ببساطة وتفتح باب التواصل.</p></div>
+      <div class="cards" id="features">
+        <article class="card"><div class="icon">✳</div><h3>فكرة واضحة</h3><p>رسالة مباشرة تساعد الزائر يفهم من أنت وماذا تقدم من أول لحظة.</p></article>
+        <article class="card"><div class="icon">◉</div><h3>تجربة مريحة</h3><p>تصميم هادئ ومتجاوب يعمل بسلاسة على الجوال والكمبيوتر.</p></article>
+        <article class="card"><div class="icon">↗</div><h3>جاهزة للتوسع</h3><p>ابدأ بصفحة واحدة، وأضف التفاصيل والخدمات كلما كبرت فكرتك.</p></article>
+      </div>
+    </section>
+    <section class="wrap contact" id="contact"><div class="contact-box"><div><div class="kicker">الخطوة التالية</div><h2>عندك فكرة؟ خلّها تنطلق.</h2><p>أضف وسيلة التواصل المناسبة لك هنا، وابدأ أول محادثة.</p></div><a class="btn primary" href="mailto:hello@example.com">hello@example.com <span class="arrow">↗</span></a></div></section>
+  </main>
+  <footer><div class="wrap foot"><span>© <span id="year"></span> مساحة. جميع الحقوق محفوظة.</span><span>صُنعت لتكون بداية.</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
